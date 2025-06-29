@@ -2,6 +2,7 @@
 
 **Clone this repository**
 - git clone https://github.com/FelienZ/Contact_API.git
+- cd Contact_API.git
 
 **Install dependencies**
 - npm install
@@ -52,7 +53,7 @@ Status: 200(OK)
 Response Body:
 Status: 400(Bad Request)
 {
-    "message": "Data Unvalid!"
+    "message": "Invalid Data!"
 }
 ```
 - ### `PUT/contacts/{id}`
@@ -76,14 +77,14 @@ Status: 200(OK)
 Response Body:
 Status: 400(Bad Request)
 {
-    "message": "Data Unvalid!"
+    "message": "Invalid Data!"
 }
 ```
 ```json
 Response Body:
 Status: 404(Not Found)
 {
-    "message": "Data Not Found!"
+    "message": "Contact Not Found!"
 }
 ```
 - ### `DELETE/contacts/{id}`
@@ -99,7 +100,7 @@ Status: 200(OK)
 Response Body:
 Status: 404(Not Found)
 {
-    "message": "Data Not Found!"
+    "message": "Contact Not Found!"
 }
 ```
 
@@ -119,6 +120,6 @@ Status: 200(OK)
 Response Body:
 Status: 404(Not Found)
 {
-    "message": "Data Not Found!"
+    "message": "Contact Not Found!"
 }
 ```
